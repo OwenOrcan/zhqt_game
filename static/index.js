@@ -129,6 +129,8 @@ function animate() {
         && player.attackBox.position.y <= enemy.position.y + enemy.height &&
         player.isAttacking
         ) {
+        enemy.velocity.x = 1.5
+        enemy.velocity.y = -1.5
         console.log('hit');
     }
 }
