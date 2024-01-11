@@ -1,3 +1,44 @@
-<canvas></canvas>
+<head>
 
-<script src="../static/index.js"></script>
+  <styl>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- red container-->
+  <div style="position: relative; display: inline-block;">
+    <!-- kucuk red container-->
+    <div 
+      style="
+        position: absolute; 
+        display: flex; 
+        width: 100%; 
+        align-items: center;
+        padding: 20px;
+      "
+    >
+      <!-- can1 -->
+      <div style="background-color: Yellow; height: 30px; width: 100%;"></div>
+      <!-- zaman -->
+      <div 
+        style="
+          background-color: red; 
+          width: 100px; 
+          height: 100px; 
+          flex-shrink: 0;
+        "
+      ></div>
+      <!-- can2 -->
+      <div style="position: relative; height: 30px; width: 100%">
+        <div id="enemyHealth" style="background-color: Yellow; height: 30px;"></div>
+        <div style="position: absolute; background: blue"></div>
+      </div>
+      <div></div>
+    </div>
+    <canvas></canvas>
+  </div>
+
+  <script src="../static/index.js"></script>
+</body>

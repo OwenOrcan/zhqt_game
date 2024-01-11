@@ -9,3 +9,6 @@ def index():
 @app.route("/arif")
 def arif():
     return render_template("arif.html")
+
+if __name__ == "__main__":
+    app.run(port=5001)
